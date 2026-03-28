@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-plosh-black: #0A0A0A;
+  --color-plosh-white: #FFFFFF;
+  --color-plosh-gray: #1F1F1F;
+  --color-plosh-accent: #3B3B3B;
+  --color-plosh-green: #22C55E;
+}
+
+body {
+  background-color: var(--color-plosh-black);
+  color: var(--color-plosh-white);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+input, textarea, select, button {
+  font-size: 16px !important;
+}
+
+@media (min-width: 641px) {
+  input, textarea, select, button {
+    font-size: inherit !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3B3B3B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection */
+::selection {
+  background: #3B3B3B;
+  color: white;
+}
+
+/* Touch-friendly buttons on mobile */
+@media (max-width: 640px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Safe area for mobile devices */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
