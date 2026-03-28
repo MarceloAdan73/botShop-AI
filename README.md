@@ -135,18 +135,28 @@ botShop-AI/
 
 ## 🏗️ Arquitectura
 
-| Tecnología | Propósito |
-|------------|----------|
-| Next.js 16 | App Router, Server Actions |
-| SQLite | DB local zero-config |
-| Google Gemini 2.5 | IA conversacional |
-| Tailwind CSS 4 | Estilos |
-| Vitest | Testing |
+### Tech Stack
 
-### Patrones
-- **Server Actions** - mutations sin API routes
-- **MVC** - modelos tipados en `/lib`
-- **Fail-open** - servicios opcionales no rompen
+| Categoría | Tecnología | Propósito |
+|-----------|------------|----------|
+| **Framework** | Next.js 16 | App Router, Server Actions |
+| **UI** | React 19 | Componentes |
+| **Lenguaje** | TypeScript | Tipado estático |
+| **Estilos** | Tailwind CSS 4 | CSS utility-first |
+| **Iconos** | Lucide React | Iconos |
+| **Notificaciones** | React Hot Toast | Toasts |
+| **Base de Datos** | better-sqlite3 | SQLite ORM |
+| **IA** | Google Gemini SDK | Chatbot IA |
+| **Rate Limiting** | Upstash Redis | Protección API |
+| **Testing** | Vitest | Tests unitarios |
+| **PostgreSQL** | pg (listo) | Migración a producción |
+| **Ejecutor** | tsx | Run scripts TypeScript |
+
+### Patrones de Diseño
+- **Server Actions** - mutations sin API routes intermedias
+- **MVC** - modelos tipados en `/lib/models.ts`
+- **Fail-open** - servicios opcionales (Redis) no rompen la app
+- **WAL Mode** - SQLite con write-ahead logging para mejor performance
 
 ---
 
