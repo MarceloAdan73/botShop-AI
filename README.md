@@ -13,51 +13,51 @@
 [![License](https://img.shields.io/github/license/MarceloAdan73/botShop-AI?style=for-the-badge)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MarceloAdan73/botShop-AI?style=for-the-badge)](https://github.com/MarceloAdan73/botShop-AI/stargazers)
 
-> 🤖 **AI Chatbot** · 📦 **E-commerce** · 💰 **Reservas & Ventas** · 🛡️ **Admin Panel**
+> 🤖 **AI Chatbot** · 📦 **E-commerce** · 💰 **Reservations & Sales** · 🛡️ **Admin Panel**
 
-Asistente de inteligencia artificial para tiendas de indumentaria, potenciado por **Google Gemini 2.5 Flash**, con gestión completa de productos, reservas y ventas.
+AI-powered virtual assistant for clothing stores, powered by **Google Gemini 2.5 Flash**, with complete product, reservation, and sales management.
 
 </div>
 
 ---
 
-## ✨ Características
+## ✨ Features
 
-| Característica | Descripción |
-|----------------|-------------|
-| 🧠 **Chatbot IA** | Asistente virtual inteligente powered by Google Gemini 2.5 Flash con contexto completo del inventario |
-| 📦 **Gestión de Productos** | CRUD completo con imágenes, categorías, talles y control de stock |
-| 💰 **Sistema de Reservas** | Reserva de productos con fecha de vencimiento, seguimiento de estado |
-| 📊 **Control de Ventas** | Registro de ventas, métodos de pago, estadísticas por período |
-| 💬 **Consultas de Clientes** | Logging automático de conversaciones, marca como atendidas |
-| 🛡️ **Seguridad** | Autenticación por cookies, rate limiting (Upstash Redis) |
-| 📱 **Diseño Responsive** | Interfaz adaptada para móvil y escritorio |
-| ✅ **Calidad** | 12 tests pasando, TypeScript strict |
+| Feature | Description |
+|---------|-------------|
+| 🧠 **AI Chatbot** | Intelligent virtual assistant powered by Google Gemini 2.5 Flash with full inventory context |
+| 📦 **Product Management** | Full CRUD with images, categories, sizes, and stock control |
+| 💰 **Reservation System** | Product reservations with expiration dates, status tracking |
+| 📊 **Sales Tracking** | Sales logging, payment methods, period statistics |
+| 💬 **Customer Inquiries** | Automatic conversation logging, mark as handled |
+| 🛡️ **Security** | Cookie authentication, rate limiting (Upstash Redis) |
+| 📱 **Responsive Design** | Mobile and desktop optimized interface |
+| ✅ **Quality** | 12 passing tests, TypeScript strict |
 
 ---
 
-## 📸 Capturas de Pantalla
+## 📸 Screenshots
 
-### Chat - Interfaz con el Bot
+### Chat - Bot Interface
 
-| Desktop | Móvil |
+| Desktop | Mobile |
 |---------|-------|
 | ![Bot](public/screenshots/bot.png) | ![Mobile](public/screenshots/mobile.png) |
 
-### Panel de Administración
+### Admin Panel
 
-| Dashboard | Productos |
+| Dashboard | Products |
 |------------|-----------|
 | ![Dashboard](public/screenshots/panel.png) | ![Products](public/screenshots/panel2.png) |
 
 ---
 
-## 🚀 Inicio Rápido
+## 🚀 Quick Start
 
-### Prerrequisitos
-- Node.js 18.x o superior
+### Prerequisites
+- Node.js 18.x or higher
 
-### Instalación
+### Installation
 
 ```bash
 git clone https://github.com/MarceloAdan73/botShop-AI.git
@@ -66,28 +66,28 @@ npm install
 cp .env.example .env.local
 ```
 
-### Ejecutar
+### Run
 
 ```bash
 npm run dev
-npm run seed    # Cargar 30 productos de ejemplo
+npm run seed    # Load 30 sample products
 ```
 
-Abre [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## ⚙️ Configuración
+## ⚙️ Configuration
 
-### Variables de Entorno
+### Environment Variables
 
 ```env
-# Google Gemini API (requerido)
-# ⚠️ La key de ejemplo es de PRUEBA con límites muy bajos
-# Obtén tu key en: https://aistudio.google.com/app/apikey
+# Google Gemini API (required)
+# ⚠️ The example key is a TEST key with very low limits
+# Get your own key at: https://aistudio.google.com/app/apikey
 GEMINI_API_KEY=your_api_key_here
 
-# Rate limiting (opcional)
+# Rate limiting (optional)
 UPSTASH_REDIS_REST_URL=https://xxx.upstash.io
 UPSTASH_REDIS_REST_TOKEN=xxx
 
@@ -95,81 +95,81 @@ UPSTASH_REDIS_REST_TOKEN=xxx
 ADMIN_PASSWORD=demo123
 ```
 
-### 🤖 Modelos de IA
+### 🤖 AI Models
 
-> ⚠️ La API key gratuita tiene límites muy bajos. Para producción, obten tu propia key.
+> ⚠️ The free API key has very low limits. For production, get your own key.
 
-| Modelo | Velocidad | Inteligencia |
+| Model | Speed | Intelligence |
 |--------|-----------|--------------|
 | Gemini 2.0 Flash | ⚡⚡⚡ | ⭐⭐ |
-| **Gemini 2.5 Flash** | ⚡⚡ | ⭐⭐⭐ (actual) |
+| **Gemini 2.5 Flash** | ⚡⚡ | ⭐⭐⭐ (current) |
 | Gemini 2.5 Pro | ⚡ | ⭐⭐⭐⭐ |
 
-Cambia el modelo en `src/app/api/chat/route.ts` línea 72.
+Change the model in `src/app/api/chat/route.ts` line 72.
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 botShop-AI/
 ├── src/app/
 │   ├── page.tsx              # Chat UI
-│   ├── admin/                # Panel admin
-│   │   ├── productos/        # CRUD productos
-│   │   ├── reservas/         # Reservas
-│   │   ├── ventas/           # Ventas
-│   │   └── consultas/       # Conversaciones
-│   └── api/                  # Rutas API
+│   ├── admin/                # Admin panel
+│   │   ├── productos/        # Product CRUD
+│   │   ├── reservas/         # Reservations
+│   │   ├── ventas/           # Sales
+│   │   └── consultas/        # Conversations
+│   └── api/                  # API routes
 ├── src/lib/
 │   ├── db.ts                 # SQLite
-│   ├── models.ts             # Modelos
+│   ├── models.ts             # Models
 │   ├── redis.ts              # Rate limiting
-│   └── tienda-config.ts      # Config tienda
+│   └── tienda-config.ts      # Store config
 ├── tests/                    # Vitest
-├── seed.ts                   # Datos ejemplo
+├── seed.ts                   # Sample data
 └── package.json
 ```
 
 ---
 
-## 🏗️ Arquitectura
+## 🏗️ Architecture
 
 ### Tech Stack
 
-| Categoría | Tecnología | Propósito |
+| Category | Technology | Purpose |
 |-----------|------------|----------|
 | **Framework** | Next.js 16 | App Router, Server Actions |
-| **UI** | React 19 | Componentes |
-| **Lenguaje** | TypeScript | Tipado estático |
-| **Estilos** | Tailwind CSS 4 | CSS utility-first |
-| **Iconos** | Lucide React | Iconos |
-| **Notificaciones** | React Hot Toast | Toasts |
-| **Base de Datos** | better-sqlite3 | SQLite ORM |
-| **IA** | Google Gemini SDK | Chatbot IA |
-| **Rate Limiting** | Upstash Redis | Protección API |
-| **Testing** | Vitest | Tests unitarios |
-| **PostgreSQL** | pg (listo) | Migración a producción |
-| **Ejecutor** | tsx | Run scripts TypeScript |
+| **UI** | React 19 | Components |
+| **Language** | TypeScript | Static typing |
+| **Styles** | Tailwind CSS 4 | Utility-first CSS |
+| **Icons** | Lucide React | Icons |
+| **Notifications** | React Hot Toast | Toasts |
+| **Database** | better-sqlite3 | SQLite ORM |
+| **AI** | Google Gemini SDK | AI Chatbot |
+| **Rate Limiting** | Upstash Redis | API Protection |
+| **Testing** | Vitest | Unit tests |
+| **PostgreSQL** | pg (ready) | Production migration |
+| **Runner** | tsx | Run TypeScript scripts |
 
-### Patrones de Diseño
-- **Server Actions** - mutations sin API routes intermedias
-- **MVC** - modelos tipados en `/lib/models.ts`
-- **Fail-open** - servicios opcionales (Redis) no rompen la app
-- **WAL Mode** - SQLite con write-ahead logging para mejor performance
+### Design Patterns
+- **Server Actions** - mutations without intermediate API routes
+- **MVC** - typed models in `/lib/models.ts`
+- **Fail-open** - optional services (Redis) don't break the app
+- **WAL Mode** - SQLite with write-ahead logging for better performance
 
 ---
 
 ## 🔌 API Endpoints
 
-### Chat (Público)
-| Método | Endpoint | Descripción |
+### Chat (Public)
+| Method | Endpoint | Description |
 |--------|----------|-------------|
-| `POST` | `/api/chat` | Mensaje al chatbot |
-| `POST` | `/api/chat/save` | Guardar conversación |
+| `POST` | `/api/chat` | Send message to chatbot |
+| `POST` | `/api/chat/save` | Save conversation |
 
-### Admin (Autenticado)
-| Método | Endpoint |
+### Admin (Authenticated)
+| Method | Endpoint |
 |--------|----------|
 | `GET/POST` | `/api/admin/products` |
 | `GET/PUT/DELETE` | `/api/admin/products/[id]` |
@@ -179,7 +179,7 @@ botShop-AI/
 
 ---
 
-## 🗄️ Schema de Base de Datos
+## 🗄️ Database Schema
 
 ```sql
 Category (id, name, slug, icon, talles)
@@ -201,7 +201,7 @@ npm run test:run
 
 ---
 
-## 🐳 Despliegue
+## 🐳 Deployment
 
 ### Vercel
 ```bash
@@ -218,40 +218,40 @@ docker run -p 3000:3000 botshop-ai
 
 ## 🗺️ Roadmap
 
-### ✅ Completado
-- [x] Chatbot IA con Gemini
-- [x] CRUD productos
-- [x] Reservas y ventas
-- [x] Panel admin
+### ✅ Completed
+- [x] AI Chatbot with Gemini
+- [x] Product CRUD
+- [x] Reservations and sales
+- [x] Admin panel
 - [x] Rate limiting
 
-### 📋 Planeado
+### 📋 Planned
 - [ ] PostgreSQL/Supabase
-- [ ] Dashboard con gráficos
+- [ ] Dashboard with charts
 - [ ] WhatsApp integration
 - [ ] Mercado Pago
-- [ ] Multi-tienda (SaaS)
+- [ ] Multi-store (SaaS)
 
 ---
 
-## ☁️ Producción
+## ☁️ Production
 
-Ver guía completa en el repositorio para migrar a **Supabase + Vercel**:
+See full guide in the repository to migrate to **Supabase + Vercel**:
 
-1. Crear proyecto Supabase
-2. Configurar variables de entorno
-3. Actualizar `db.ts` para PostgreSQL
-4. Desplegar en Vercel
-
----
-
-## 📄 Licencia
-
-MIT - ver [LICENSE](LICENSE)
+1. Create Supabase project
+2. Configure environment variables
+3. Update `db.ts` for PostgreSQL
+4. Deploy to Vercel
 
 ---
 
-## 👤 Autor
+## 📄 License
+
+MIT - see [LICENSE](LICENSE)
+
+---
+
+## 👤 Author
 
 **Marcelo Adan**  
 [![GitHub](https://img.shields.io/badge/GitHub-M%20MarceloAdan73-181717?style=flat-square)](https://github.com/MarceloAdan73)
@@ -259,5 +259,5 @@ MIT - ver [LICENSE](LICENSE)
 ---
 
 <div align="center">
-  <a href="#-botshop-ai">⬆️ Volver arriba</a>
+  <a href="#-botshop-ai">⬆️ Back to top</a>
 </div>
