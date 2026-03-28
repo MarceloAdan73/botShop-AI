@@ -36,12 +36,12 @@
 ## 📸 Screenshots
 
 ### Chat Interface
-![Bot](screenshots/bot.png)
-![Mobile](screenshots/mobile.png)
+![Bot](/screenshots/bot.png)
+![Mobile](/screenshots/mobile.png)
 
 ### Admin Panel
-![Dashboard](screenshots/panel.png)
-![Products](screenshots/panel2.png)
+![Dashboard](/screenshots/panel.png)
+![Products](/screenshots/panel2.png)
 
 ---
 
