@@ -9,7 +9,7 @@
 [![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite)](https://sqlite.org)
 [![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge)](https://vitest.dev)
-[![Tests](https://img.shields.io/badge/tests-12%20passing-42b883?style=for-the-badge)](https://vitest.dev)
+[![Tests](https://img.shields.io/badge/tests-74%20passing-42b883?style=for-the-badge)](https://vitest.dev)
 [![License](https://img.shields.io/github/license/MarceloAdan73/botShop-AI?style=for-the-badge)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MarceloAdan73/botShop-AI?style=for-the-badge)](https://github.com/MarceloAdan73/botShop-AI/stargazers)
 
@@ -32,7 +32,7 @@ AI-powered virtual assistant for clothing stores, powered by **Google Gemini 2.5
 | 💬 **Customer Inquiries** | Automatic conversation logging, mark as handled |
 | 🛡️ **Security** | Cookie authentication, rate limiting (Upstash Redis) |
 | 📱 **Responsive Design** | Mobile and desktop optimized interface |
-| ✅ **Quality** | 12 passing tests, TypeScript strict |
+| ✅ **Quality** | 74 passing tests, TypeScript strict |
 
 ---
 
