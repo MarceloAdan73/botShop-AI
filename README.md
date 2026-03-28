@@ -3,7 +3,7 @@
 <div align="center">
 
 <!-- Banner Principal -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=300&section=header&text=ShopBot%20AI&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=wave&color=0:00d4ff,100:7b2cbf&height=300&section=header&text=ShopBot%20AI&fontSize=90&fontAlignY=30&animation=fadeIn&desc=AI-Powered%20E-commerce%20Bot&descAlignY=70&descSize=30" width="100%" />
 
 <!-- Badges -->
 <p>
@@ -412,13 +412,13 @@ docker run -p 3000:3000 botshop-ai
 
 | Desktop | Móvil |
 |---------|-------|
-| ![Bot](screenshots/bot.png) | ![Mobile](screenshots/mobile.png) |
+| ![Bot](public/screenshots/bot.png) | ![Mobile](public/screenshots/mobile.png) |
 
 ### Panel de Administración
 
 | Dashboard | Productos |
 |------------|-----------|
-| ![Dashboard](screenshots/panel.png) | ![Products](screenshots/panel2.png) |
+| ![Dashboard](public/screenshots/panel.png) | ![Products](public/screenshots/panel2.png) |
 
 ---
 
