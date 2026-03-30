@@ -11,7 +11,6 @@
 [![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge)](https://vitest.dev)
 [![Tests](https://img.shields.io/badge/tests-74%20passing-42b883?style=for-the-badge)](https://vitest.dev)
 [![License](https://img.shields.io/github/license/MarceloAdan73/botShop-AI?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MarceloAdan73/botShop-AI?style=for-the-badge)](https://github.com/MarceloAdan73/botShop-AI/stargazers)
 
 > 🤖 **AI Chatbot** · 📦 **E-commerce** · 💰 **Reservations & Sales** · 🛡️ **Admin Panel**
 
