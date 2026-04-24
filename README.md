@@ -1,8 +1,9 @@
 # 🧠 ShopBot AI
 
+[![CI](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml)
+
 <div align="center">
 
-[![CI](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-88%20passing-42b883?style=for-the-badge)](https://vitest.dev)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google)](https://gemini.google.com)
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=next.js)](https://nextjs.org)
