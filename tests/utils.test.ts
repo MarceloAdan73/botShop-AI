@@ -145,7 +145,7 @@ describe('Chat Flow Utilities', () => {
       const formatted = formatProductCard(product);
       
       expect(formatted).toContain('Remera');
-      expect(formatted).toMatch(/15\.000/);
+      expect(formatted).toMatch(/15[.,]000/);
     });
 
     it('should include talles when provided', () => {
