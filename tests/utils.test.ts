@@ -230,7 +230,7 @@ describe('Chat Flow Utilities', () => {
 
     it('should handle large numbers with separators', () => {
       const formatted = formatPrice(150000);
-      expect(formatted).toMatch(/150.000/);
+      expect(formatted).toMatch(/150\.000/);
     });
   });
 });
