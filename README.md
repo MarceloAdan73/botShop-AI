@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![CI](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google)](https://gemini.google.com)
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
