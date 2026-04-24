@@ -1,6 +1,10 @@
 # 🧠 ShopBot AI
 
-[![CI](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml)
+<p align="center">
+  <a href="https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml">
+    <img src="https://github.com/MarceloAdan73/botShop-AI/actions/workflows/ci.yml/badge.svg" alt="CI">
+  </a>
+</p>
 
 <div align="center">
 
